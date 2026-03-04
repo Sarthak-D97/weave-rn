@@ -28,7 +28,7 @@ importers:
         version: 1.1.2(@apollo/server@5.4.0(graphql@16.13.1))(express@5.2.1)
       '@nestjs/apollo':
         specifier: ^13.2.4
-        version: 13.2.4(@apollo/server@5.4.0(graphql@16.13.1))(@as-integrations/express5@1.1.2(@apollo/server@5.4.0(graphql@16.13.1))(express@5.2.1))(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/graphql@13.2.4(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.4)(graphql@16.13.1)(reflect-metadata@0.2.2))(graphql@16.13.1)
+        version: 13.2.4(@apollo/server@5.4.0(graphql@16.13.1))(@as-integrations/express5@1.1.2(@apollo/server@5.4.0(graphql@16.13.1)))(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/graphql@13.2.4(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.4)(graphql@16.13.1)(reflect-metadata@0.2.2))(graphql@16.13.1)
       '@nestjs/common':
         specifier: ^11.0.1
         version: 11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -173,7 +173,7 @@ importers:
         version: 1.1.2(@apollo/server@5.4.0(graphql@16.13.1))(express@5.2.1)
       '@nestjs/apollo':
         specifier: ^13.2.4
-        version: 13.2.4(@apollo/server@5.4.0(graphql@16.13.1))(@as-integrations/express5@1.1.2(@apollo/server@5.4.0(graphql@16.13.1))(express@5.2.1))(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/graphql@13.2.4(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.4)(graphql@16.13.1)(reflect-metadata@0.2.2))(graphql@16.13.1)
+        version: 13.2.4(@apollo/server@5.4.0(graphql@16.13.1))(@as-integrations/express5@1.1.2(@apollo/server@5.4.0(graphql@16.13.1)))(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/graphql@13.2.4(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.4)(graphql@16.13.1)(reflect-metadata@0.2.2))(graphql@16.13.1)
       '@nestjs/common':
         specifier: ^11.0.1
         version: 11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -198,6 +198,9 @@ importers:
       '@prisma/client':
         specifier: ^7.4.2
         version: 7.4.2(prisma@7.4.2(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.2))(typescript@5.9.2)
+      dotenv:
+        specifier: ^17.3.1
+        version: 17.3.1
       graphql:
         specifier: ^16.13.0
         version: 16.13.1
@@ -2461,6 +2464,10 @@ packages:
 
   dotenv@17.2.3:
     resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
+    engines: {node: '>=12'}
+
+  dotenv@17.3.1:
+    resolution: {integrity: sha512-IO8C/dzEb6O3F9/twg6ZLXz164a2fhTnEWb95H23Dm4OuN+92NmEAlTrupP9VW6Jm3sO26tQlqyvyi4CsnY9GA==}
     engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
@@ -5936,7 +5943,7 @@ snapshots:
       '@tybys/wasm-util': 0.10.1
     optional: true
 
-  '@nestjs/apollo@13.2.4(@apollo/server@5.4.0(graphql@16.13.1))(@as-integrations/express5@1.1.2(@apollo/server@5.4.0(graphql@16.13.1))(express@5.2.1))(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/graphql@13.2.4(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.4)(graphql@16.13.1)(reflect-metadata@0.2.2))(graphql@16.13.1)':
+  '@nestjs/apollo@13.2.4(@apollo/server@5.4.0(graphql@16.13.1))(@as-integrations/express5@1.1.2(@apollo/server@5.4.0(graphql@16.13.1)))(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/graphql@13.2.4(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.14.4)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.4)(graphql@16.13.1)(reflect-metadata@0.2.2))(graphql@16.13.1)':
     dependencies:
       '@apollo/server': 5.4.0(graphql@16.13.1)
       '@apollo/server-plugin-landing-page-graphql-playground': 4.0.1(@apollo/server@5.4.0(graphql@16.13.1))
@@ -7397,6 +7404,8 @@ snapshots:
   dotenv@16.6.1: {}
 
   dotenv@17.2.3: {}
+
+  dotenv@17.3.1: {}
 
   dunder-proto@1.0.1:
     dependencies:

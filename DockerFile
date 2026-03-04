@@ -1,0 +1,56 @@
+# ---------------------------------------------------------
+# 1. Base Setup (Install pnpm)
+# ---------------------------------------------------------
+FROM node:20-alpine AS alpine
+RUN apk update && apk add --no-cache libc6-compat
+# Enable pnpm via corepack
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+
+# ---------------------------------------------------------
+# 2. Prune Stage (Extract only the app we want to build)
+# ---------------------------------------------------------
+FROM alpine AS builder
+WORKDIR /app
+# Install turbo globally for pruning
+RUN pnpm add -g turbo
+COPY . .
+# We pass the app name as an argument during the build
+ARG APP_NAME
+# This command creates an "out" folder with only the needed files
+RUN turbo prune ${APP_NAME} --docker
+
+# ---------------------------------------------------------
+# 3. Installer & Builder Stage
+# ---------------------------------------------------------
+FROM alpine AS installer
+WORKDIR /app
+
+# First install the dependencies (this layer caches well)
+COPY --from=builder /app/out/json/ .
+COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
+RUN pnpm install --frozen-lockfile
+
+# Now copy the actual pruned source code
+COPY --from=builder /app/out/full/ .
+ARG APP_NAME
+# Build the specific app and any shared packages it depends on
+RUN pnpm turbo run build --filter=${APP_NAME}...
+
+# ---------------------------------------------------------
+# 4. Runner Stage (The final lightweight image)
+# ---------------------------------------------------------
+FROM alpine AS runner
+WORKDIR /app
+ARG APP_NAME
+
+
+# Copy the built workspace from the installer stage
+COPY --from=installer /app .
+
+# Set the working directory to the specific app we just built
+WORKDIR /app/apps/${APP_NAME}
+
+# Start the NestJS application
+CMD ["node", "dist/main.js"]

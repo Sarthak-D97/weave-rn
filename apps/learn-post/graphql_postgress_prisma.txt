@@ -1,0 +1,45 @@
+# mutation {
+#   createBook(data: {
+#     title: "nest mfjs",
+#     author: "tenmsfart",
+#   }) {
+#     id
+#     title
+#     author
+#   }
+# }
+# query{
+#   findAll{
+#     id,
+#     title,
+#  		author
+#   }
+# }
+
+# query{
+#   findOne(id:"7476431b-823e-4a37-bb68-7d6d4940c1ef"){
+#     id,
+#     title,
+#   }
+# }
+
+# mutation{
+#   removeBook(id:"7476431b-823e-4a37-bb68-7d6d4940c1ef"){
+#     id
+#   }
+# }
+
+# mutation {
+#   updateBook(
+#     id: "96758702-c891-4a6a-af09-93e9857ed490", # You might still need this if your resolver expects two arguments
+#     data: {
+#       id: "96758702-c891-4a6a-af09-93e9857ed490", # Add the ID inside the data payload
+#       title: "fullstack dev",
+#       author: "sarthak"
+#     }
+#   ) {
+#     id
+#     title
+#     author
+#   }
+# }

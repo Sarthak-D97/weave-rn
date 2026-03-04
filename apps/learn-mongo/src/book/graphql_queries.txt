@@ -1,0 +1,41 @@
+# mutation {
+#   createBook(input: {
+#     title: "nest mfjs",
+#     author: "tenmsfart",
+#     description:"wfwff"
+#   }) {
+#     _id
+#     title
+#     author
+#   }
+# }
+# query{
+#   books{
+#     _id,
+#     title,
+#  		author
+#   }
+# }
+
+# query{
+#   book(id:"69a6b18575468b328cd264b8"){
+#     _id,
+#     title,
+#   }
+# }
+
+# mutation{
+#   deleteBook(id:"69a6b18575468b328cd264b8")
+# }
+
+# mutation{
+#   updateBook(input:{
+#     id:"69a6b11975468b328cd264b6"
+#   	title:"fullstack dev",
+#   	author:"sarthak"
+#   }){
+#     _id
+#     title
+#     author
+#   }
+# }
